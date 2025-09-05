@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> صفحة هبوط | Mostafa Elfawal</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Bai Jamjuree", sans-serif;
+        text-align: center;
+      }
+      main {
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+      }
+      section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      .main {
+        background-image: url("images/bg-header-desktop.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 10%;
+        flex-direction: column;
+        gap: 15px;
+      }
+      .main-p {
+        margin-bottom: 15px;
+        color: hsl(210, 10%, 33%);
+        font-weight: bold;
+        font-size: x-large;
+      }
+      .main-p2 {
+        color: hsl(210, 10%, 33%);
+        font-weight: bold;
+        font-size: medium;
+        margin-bottom: 5px;
+      }
+      h1 {
+        color: hsl(210, 10%, 33%);
+      }
+      .paragraph {
+        color: hsl(201, 11%, 66%);
+        line-height: 1.5;
+        max-width: 55%;
+      }
+      .p-propertis {
+        line-height: 2;
+        font-size: 11px;
+        max-width: 80%;
+      }
+      .btns-container {
+        margin-top: 20px;
+        display: flex;
+        gap: 15px;
+      }
+      .btns-container a {
+        text-decoration: none;
+        border-radius: 50px;
+        color: white;
+        padding: 10px 20px;
+        font-weight: 400;
+        transition: opacity 0.3s ease;
+      }
+      .ios {
+        background-color: hsl(171, 66%, 44%);
+        border-bottom: 3px solid #269b85;
+        box-shadow: 0 10px 10px hsla(171, 66%, 44%, 0.4);
+      }
+      .mac {
+        background-color: hsl(233, 100%, 69%);
+        border-bottom: 3px solid #5062da;
+        box-shadow: 0 10px 10px hsla(233, 100%, 69%, 0.4);
+      }
+      .ios:hover,
+      .mac:hover {
+        opacity: 0.6;
+      }
+      .devices-conainer {
+        margin-top: 50px;
+        display: flex;
+        gap: 20px;
+      }
+      .computer {
+        margin-right: auto;
+        width: 80%;
+        height: 80%;
+        transform: translateX(-15px);
+      }
+      .computer-propertis {
+        text-align: left;
+        padding: 50px;
+        justify-content: space-around;
+        display: flex;
+        flex-direction: column;
+      }
+      .container-workflow {
+        display: flex;
+        margin-top: 50px;
+        justify-content: space-between;
+      }
+      .container-workflow div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 33%;
+      }
+      .container-workflow div img {
+        margin-bottom: 30px;
+      }
+      .img-container {
+        display: flex;
+        gap: 50px;
+        flex-direction: row;
+      }
+      footer {
+        background-color: #f5f6f8;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        padding: 20px 10%;
+        align-items: center;
+        justify-content: center;
+      }
+      footer a {
+        transition: color 0.3s ease;
+      }
+      footer a:hover {
+        color: hsl(171, 66%, 44%);
+      }
+      footer .left-container img {
+        width: 50px;
+        height: 50px;
+      }
+      .left-container {
+        display: flex;
+        gap: 50px;
+        text-align: left;
+        justify-content: center;
+      }
+      .left-container a {
+        text-decoration: none;
+        color: #5e6265;
+      }
+      .left-container div {
+        display: flex;
+        flex-direction: column;
+        line-height: 2;
+      }
+      .right-container {
+        margin-left: auto;
+        align-self: center;
+        margin-right: 10px;
+        display: flex;
+        gap: 20px;
+      }
+      .right-container * {
+        cursor: pointer;
+      }
+      @media (max-width: 1000px) {
+        * {
+          flex-direction: column !important;
+        }
+        .main {
+          background-image: url("images/bg-header-mobile.png");
+        }
+        .btns-container {
+          width: 100%;
+        }
+        .btns-container a {
+          width: 90%;
+          margin: auto;
+          max-width: 400px;
+        }
+        .computer {
+          margin: auto;
+          width: 80%;
+          height: 80%;
+          transform: translateX(0);
+        }
+        .computer-propertis {
+          display: flex;
+          gap: 40px;
+        }
+        .computer-propertis div {
+          text-align: center;
+          justify-content: space-between;
+          align-items: center;
+          display: flex;
+        }
+        .container-workflow {
+          align-items: center;
+        }
+        .container-workflow div {
+          margin-bottom: 30px;
+          width: 50%;
+        }
+        .p-propertis {
+          max-width: 100%;
+        }
+        footer {
+          align-items: center;
+        }
+        .right-container {
+          margin: 30px auto;
+          flex-direction: row !important;
+          gap: 50px;
+        }
+        .left-container {
+          gap: 10px;
+          align-items: center;
+        }
+        .left-container div {
+          text-align: center;
+          gap: 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header class="main">
+        <img src="images/logo.svg" alt="Logo" />
+        <h1>A history of everything you copy</h1>
+        <p class="paragraph">
+          Clipboard allows you to track and organize everything you
+          copy.Instantly access your clipboard on all your devices.
+        </p>
+        <div class="btns-container">
+          <a href="#" class="ios">Download for IOS</a
+          ><a href="#" class="mac">Download for Mac</a>
+        </div>
+      </header>
+      <section>
+        <p class="main-p">Keep track of your snippets</p>
+        <p class="paragraph">
+          Clipboard Instantly stores any item you copy in the cloud meaning
+          youcan access your snippets immediately on all your devices. Our Mac
+          andiOS apps will help you organize everything.
+        </p>
+        <div class="devices-conainer">
+          <img
+            src="images/image-computer.png"
+            alt="image-computer"
+            class="computer"
+          />
+          <div class="computer-propertis">
+            <div>
+              <p class="main-p2">Quick Search</p>
+              <p class="paragraph p-propertis">
+                Easily search your snippets by content, category, web address,
+                application, and more.
+              </p>
+            </div>
+            <div>
+              <p class="main-p2">iCloud Sync</p>
+              <p class="paragraph p-propertis">
+                Instantly saves and syncs snippets across all your devices.
+              </p>
+            </div>
+            <div>
+              <p class="main-p2">Complate History</p>
+              <p class="paragraph p-propertis">
+                Retrieve any snippets from the first moment you started using
+                the app.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <p class="main-p">Access Clipboard anywhere</p>
+        <p class="paragraph">
+          Whether you're on the go, or at your computer, you can access all
+          yourClipboard snippets in a few simple clicks.
+        </p>
+        <div class="devices-conainer">
+          <img
+            src="images/image-devices.png"
+            alt="image-devices"
+            class="computer"
+            style="margin: auto"
+          />
+        </div>
+      </section>
+      <section>
+        <p class="main-p">Supercharge your workflow</p>
+        <p class="paragraph">We've got the tools to boost your productivity.</p>
+        <div class="container-workflow">
+          <div>
+            <img src="images/icon-blacklist.svg" alt="icon-blacklist" />
+            <p class="main-p2">Create blacklists</p>
+            <p class="paragraph p-propertis">
+              Ensure sensitive information never makes its way to your clipboard
+              by excluding certain sources.
+            </p>
+          </div>
+          <div>
+            <img src="images/icon-text.svg" alt="icon-text" />
+            <p class="main-p2">Plain text snippets</p>
+            <p class="paragraph p-propertis">
+              Remove unwanted formatting from copied text for a consistent look.
+            </p>
+          </div>
+          <div>
+            <img src="images/icon-preview.svg" alt="icon-preview" />
+            <p class="main-p2">Sneak preview</p>
+            <p class="paragraph p-propertis">
+              Quick preview of all snippets on your Clipboard for easy access.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="img-container">
+        <img src="images/logo-google.png" alt="logo-google" /><img
+          src="images/logo-ibm.png"
+          alt="logo-ibm"
+        /><img src="images/logo-microsoft.png" alt="logo-microsoft" /><img
+          src="images/logo-hp.png"
+          alt="logo-hp"
+        /><img
+          src="images/logo-vector-graphics.png"
+          alt="logo-vector-graphics"
+        />
+      </section>
+      <section>
+        <p class="main-p">Clipboard for iOS and Mac OS</p>
+        <p class="paragraph">
+          Avalible for free on the App Store. Dowunload for Mac or iOS, syncwith
+          iCloud and you're ready to start adding to your clipboard
+        </p>
+        <div class="btns-container">
+          <a href="#" class="ios">Download for IOS</a
+          ><a href="#" class="mac">Download for Mac</a>
+        </div>
+      </section>
+      <footer>
+        <div class="left-container">
+          <img src="images/logo.svg" alt="logo" />
+          <div><a href="#">FAQs</a> <a href="#">Contact Us</a></div>
+          <div><a href="#">Privacy Policy</a> <a href="#">Press Kit</a></div>
+          <div><a href="#">Install Guide</a></div>
+        </div>
+        <div class="right-container">
+          <img src="images/icon-facebook.svg" alt="facebook" /><img
+            src="images/icon-twitter.svg"
+            alt="twitter"
+          /><img src="images/icon-instagram.svg" alt="instagram" />
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
